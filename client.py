@@ -4,9 +4,19 @@ import select
 import sys 
   
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-if len(sys.argv) != 3: 
+
+if sys.argv[1] = "David"   
+    print ("Using David Home Config")
+    sys.argv[1] = '10.0.0.19'
+    sys.argv[2] = '9999'
+elif sys.argv[1] == 'Drew'
+    print ("Using Drew Home Config")
+    sys.argv[1] = '10.0.0.19'
+    sys.argv[2] = '9999'
+elif len(sys.argv) != 3: 
     print ("Correct usage: script, IP address, port number")
     exit() 
+
 IP_address = str(sys.argv[1]) 
 Port = int(sys.argv[2]) 
 server.connect((IP_address, Port)) 
